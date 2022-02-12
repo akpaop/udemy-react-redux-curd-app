@@ -19,3 +19,12 @@
 // 4.git branch -M main
 // 5.git push -u origin main
 //こんな感じ。かなり微妙。
+
+//https://www.npmjs.com/package/redux
+//npm install --save redux
+
+// https://www.npmjs.com/package/react-redux
+//npm install react-redux
+
+//↓これもありだった？
+//npx create-react-app my-app --template redux
