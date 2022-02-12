@@ -28,3 +28,10 @@
 
 //↓これもありだった？
 //npx create-react-app my-app --template redux
+
+// https://www.npmjs.com/package/axios
+// cd udemy-react-redux-curd-app
+// npm i axios
+
+// https://www.npmjs.com/package/redux-thunk
+// npm i redux-thunk
