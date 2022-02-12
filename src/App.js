@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function App() {
 	const dom = <h1>udemy-react-redux-curd-app start jsx dom</h1>;
 
@@ -39,6 +41,11 @@ const DispUser = (props) => {
 			<span>{props.LastName} !!</span>
 		</div>
 	);
+};
+
+DispUser.propTypes = {
+	FirstName: PropTypes.string,
+	LastName: PropTypes.string,
 };
 
 export default App;
