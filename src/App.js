@@ -1,16 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
-	return (
-		<div className='App'>
-			<header className='App-header'>
-				<img src={logo} className='App-logo' alt='logo' />
-
-				<p>udemy-react-redux-curd-app start</p>
-			</header>
-		</div>
-	);
+	return <div>udemy-react-redux-curd-app start</div>;
 }
 
 export default App;
