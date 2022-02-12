@@ -19,3 +19,14 @@
 // 4.git branch -M main
 // 5.git push -u origin main
 //こんな感じ。かなり微妙。
+
+//https://mui.com/
+//npm install @mui/material @emotion/react @emotion/styled
+//https://www.npmjs.com/package/@material-ui/core
+//npm install @material-ui/core
+
+//https://www.npmjs.com/package/@material-ui/icons
+//npm install @material-ui/icons
+
+//テンプレート画面
+//https://mui.com/getting-started/templates/sign-up/
