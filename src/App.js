@@ -1,5 +1,9 @@
 function App() {
-	return <div>udemy-react-redux-curd-app start</div>;
+	return (
+		<div>
+			<h1>udemy-react-redux-curd-app start jsx</h1>
+		</div>
+	);
 }
 
 export default App;
