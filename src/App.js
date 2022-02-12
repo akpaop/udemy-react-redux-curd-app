@@ -7,7 +7,7 @@ function App() {
 			<header className='App-header'>
 				<img src={logo} className='App-logo' alt='logo' />
 
-				<p>udemy-react-redux-curd-app</p>
+				<p>udemy-react-redux-curd-app start</p>
 			</header>
 		</div>
 	);
