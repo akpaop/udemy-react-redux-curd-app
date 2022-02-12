@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Counter } from './Counter';
 
 function App() {
 	const dom = <h1>udemy-react-redux-curd-app start jsx dom</h1>;
@@ -28,6 +29,8 @@ function App() {
 					/>
 				);
 			})}
+
+			<Counter />
 		</div>
 	);
 }
