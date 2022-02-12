@@ -6,13 +6,16 @@
 // サーバー実行してブラウザ表示、ホットリロードスタート
 // npm start
 
-//git init
-//git add readme.jsx
-//git commit -m "first commit"
-//git branch -M main
-// git remote add origin https://github.com/akpaop/udemy-react-redux-curd-app.git
-//git push -u origin main
-
 // git remote add origin https://github.com/akpaop/udemy-react-redux-curd-app.git
 // git branch -M main
 // git push -u origin main
+
+//GitKrakenでC:\GitHub\udemy-react-redux-curd-appを開くとGitによる捕捉を確認
+
+//まとめると
+// 1.create-react-app
+// 2.gitを作成
+// 3.git remote add
+// 4.git branch -M main
+// 5.git push -u origin main
+//こんな感じ。かなり微妙。
