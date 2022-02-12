@@ -13,3 +13,6 @@
 // git remote add origin https://github.com/akpaop/udemy-react-redux-curd-app.git
 //git push -u origin main
 
+// git remote add origin https://github.com/akpaop/udemy-react-redux-curd-app.git
+// git branch -M main
+// git push -u origin main
