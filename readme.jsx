@@ -7,6 +7,9 @@
 // npm start
 
 //git init
-// git add readme.txt
-
+//git add readme.jsx
+//git commit -m "first commit"
+//git branch -M main
 // git remote add origin https://github.com/akpaop/udemy-react-redux-curd-app.git
+//git push -u origin main
+
