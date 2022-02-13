@@ -46,7 +46,7 @@ export const SignIn = ({ setName }) => {
 	const [inpName, setInpName] = useState('');
 
 	useEffect(() => {
-		console.log(inpName);
+		// console.log(inpName);
 		if (inpName !== '') {
 			setBtnDisable(false);
 		} else {
@@ -71,7 +71,6 @@ export const SignIn = ({ setName }) => {
 						color='primary'
 						className={classes.submit}
 						onClick={() => {
-							//console.log('Click');
 							setName(inpName);
 						}}
 						disabled={btnDisable}
@@ -89,6 +88,12 @@ export const SignIn = ({ setName }) => {
 						autoFocus
 						onChange={(e) => {
 							setInpName(e.target.value);
+						}}
+						onKeyDown={(e) => {
+							if (e.key === 'Enter') {
+								setName(inpName);
+								e.preventDefault();
+							}
 						}}
 					/>
 				</form>
