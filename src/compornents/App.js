@@ -3,7 +3,7 @@ import SignIn from './SignIn';
 function App() {
 	return (
 		<div>
-			udemy-react-redux-curd-app chat
+			udemy-react-app-chat
 			<SignIn />
 		</div>
 	);
