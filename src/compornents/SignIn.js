@@ -65,12 +65,15 @@ export const SignIn = ({ setName }) => {
 				</Typography>
 				<form className={classes.form} noValidate>
 					<Button
-						type='submit'
+						type='button'
 						fullWidth
 						variant='contained'
 						color='primary'
 						className={classes.submit}
-						// onClick={() => console.log('Click')}
+						onClick={() => {
+							//console.log('Click');
+							setName(inpName);
+						}}
 						disabled={btnDisable}
 					>
 						はじめる
