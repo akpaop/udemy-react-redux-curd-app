@@ -10,13 +10,13 @@ export const App = () => {
 
 	const divMain = (
 		<div>
-			udemy-react-app-chat
-			<Main name={name} />
+			{/* udemy-react-app-chat */}
+			<Main name={name}></Main>
 		</div>
 	);
 	const divSignIn = (
 		<div>
-			udemy-react-app-chat
+			{/* udemy-react-app-chat */}
 			<SignIn setName={setName} />
 		</div>
 	);
