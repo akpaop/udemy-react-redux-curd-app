@@ -9,7 +9,7 @@ export const App = () => {
 	const divMain = (
 		<div>
 			udemy-react-app-chat
-			<Main />
+			<Main name={name} />
 		</div>
 	);
 	const divSignIn = (

@@ -1,3 +1,3 @@
-export const Main = () => {
-	return <div>Main</div>;
+export const Main = ({ name }) => {
+	return <div>Main name:{name}</div>;
 };
