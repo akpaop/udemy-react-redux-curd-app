@@ -1,4 +1,5 @@
-// import React from 'react';
+import { useEffect, useState } from 'react';
+
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
@@ -41,6 +42,18 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export const SignIn = ({ setName }) => {
+	const [btnDisable, setBtnDisable] = useState(true);
+	const [inpName, setInpName] = useState('');
+
+	useEffect(() => {
+		console.log(inpName);
+		if (inpName !== '') {
+			setBtnDisable(false);
+		} else {
+			setBtnDisable(true);
+		}
+	}, [inpName]);
+
 	const classes = useStyles();
 
 	return (
@@ -51,6 +64,17 @@ export const SignIn = ({ setName }) => {
 					Welcome
 				</Typography>
 				<form className={classes.form} noValidate>
+					<Button
+						type='submit'
+						fullWidth
+						variant='contained'
+						color='primary'
+						className={classes.submit}
+						// onClick={() => console.log('Click')}
+						disabled={btnDisable}
+					>
+						はじめる
+					</Button>
 					<TextField
 						variant='outlined'
 						margin='normal'
@@ -60,16 +84,10 @@ export const SignIn = ({ setName }) => {
 						label='ニックネーム'
 						name='name'
 						autoFocus
+						onChange={(e) => {
+							setInpName(e.target.value);
+						}}
 					/>
-					<Button
-						type='submit'
-						fullWidth
-						variant='contained'
-						color='primary'
-						className={classes.submit}
-					>
-						はじめる
-					</Button>
 				</form>
 			</div>
 			<Box mt={8}>
