@@ -4,7 +4,7 @@ import { MessageList } from './MessageList';
 
 const useStyles = makeStyles(() => ({
 	root: {
-		backgroundColor: 'red',
+		// backgroundColor: 'red',
 		display: 'grid',
 		height: '100vh',
 		gridTemplateRows: '1fr auto',
