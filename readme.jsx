@@ -38,3 +38,6 @@
 // https://mui.com/components/grid/
 // Materiau UI Avater
 // https://mui.com/components/avatars/
+
+// https://www.npmjs.com/package/crypto-browserify
+// npm i crypto-browserify
