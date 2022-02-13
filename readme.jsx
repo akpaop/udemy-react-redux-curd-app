@@ -30,3 +30,6 @@
 
 //テンプレート画面
 //https://mui.com/getting-started/templates/sign-up/
+
+//Button API disabled
+//https://mui.com/api/button/

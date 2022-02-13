@@ -1,4 +1,5 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
+
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
@@ -40,7 +41,19 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-export default function SignIn() {
+export const SignIn = ({ setName }) => {
+	const [btnDisable, setBtnDisable] = useState(true);
+	const [inpName, setInpName] = useState('');
+
+	useEffect(() => {
+		// console.log(inpName);
+		if (inpName !== '') {
+			setBtnDisable(false);
+		} else {
+			setBtnDisable(true);
+		}
+	}, [inpName]);
+
 	const classes = useStyles();
 
 	return (
@@ -51,6 +64,19 @@ export default function SignIn() {
 					Welcome
 				</Typography>
 				<form className={classes.form} noValidate>
+					<Button
+						type='button'
+						fullWidth
+						variant='contained'
+						color='primary'
+						className={classes.submit}
+						onClick={() => {
+							setName(inpName);
+						}}
+						disabled={btnDisable}
+					>
+						はじめる
+					</Button>
 					<TextField
 						variant='outlined'
 						margin='normal'
@@ -60,16 +86,16 @@ export default function SignIn() {
 						label='ニックネーム'
 						name='name'
 						autoFocus
+						onChange={(e) => {
+							setInpName(e.target.value);
+						}}
+						onKeyDown={(e) => {
+							if (e.key === 'Enter') {
+								setName(inpName);
+								e.preventDefault();
+							}
+						}}
 					/>
-					<Button
-						type='submit'
-						fullWidth
-						variant='contained'
-						color='primary'
-						className={classes.submit}
-					>
-						はじめる
-					</Button>
 				</form>
 			</div>
 			<Box mt={8}>
@@ -77,4 +103,4 @@ export default function SignIn() {
 			</Box>
 		</Container>
 	);
-}
+};
