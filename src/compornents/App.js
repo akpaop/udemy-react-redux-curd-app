@@ -1,12 +1,13 @@
-import SignIn from './SignIn';
+import { useState } from 'react';
+import { SignIn } from './SignIn';
 
-function App() {
+export const App = () => {
+	const [name, setName] = useState('');
+	console.log('name', name);
 	return (
 		<div>
 			udemy-react-app-chat
-			<SignIn />
+			<SignIn setName={setName} />
 		</div>
 	);
-}
-
-export default App;
+};
