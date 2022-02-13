@@ -16,8 +16,9 @@ export const MessageInputField = ({ name }) => {
 					<Avatar
 						// sx={{ bgcolor: green[500] }}
 						variant='rounded'
-						// {name}
-					></Avatar>
+					>
+						{name}
+					</Avatar>
 				</Grid>
 				<Grid xs={10}>
 					<input type='text' />
