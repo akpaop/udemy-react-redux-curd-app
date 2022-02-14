@@ -1,5 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
-import { MessageInputField } from './MessageInputField';
+import { MessageFooter } from './MessageFooter';
 import { MessageList } from './MessageList';
 
 const useStyles = makeStyles(() => ({
@@ -16,7 +16,7 @@ export const Main = ({ name }) => {
 	return (
 		<div className={classes.root}>
 			<MessageList></MessageList>
-			<MessageInputField name={name}></MessageInputField>
+			<MessageFooter name={name}></MessageFooter>
 		</div>
 	);
 };

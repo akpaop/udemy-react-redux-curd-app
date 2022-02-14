@@ -1,13 +1,22 @@
+import { useEffect, useState } from 'react';
 import { Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import Avatar from '@mui/material/Avatar';
 // import { green } from '@mui/material/colors';
 
+import { MessageField } from './MessageField';
+
 const useStyles = makeStyles(() => ({
 	root: { gridRow: 2, margin: '26px' },
 }));
 
-export const MessageInputField = ({ name }) => {
+export const MessageFooter = ({ name }) => {
+	const [inpText, setInpText] = useState('');
+
+	useEffect(() => {
+		console.log(inpText);
+	}, [inpText]);
+
 	const classes = useStyles();
 	return (
 		<div className={classes.root}>
@@ -21,9 +30,9 @@ export const MessageInputField = ({ name }) => {
 					</Avatar>
 				</Grid>
 				<Grid xs={10}>
-					<input type='text' />
+					<MessageField setInpText={setInpText} />
 				</Grid>
-				<Grid xs={1}></Grid>
+				<Grid xs={1}>{inpText}</Grid>
 			</Grid>
 		</div>
 	);
