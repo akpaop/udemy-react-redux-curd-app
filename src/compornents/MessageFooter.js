@@ -14,14 +14,14 @@ export const MessageFooter = ({ name }) => {
 	const [inpText, setInpText] = useState('');
 
 	useEffect(() => {
-		console.log(inpText);
+		// console.log(inpText);
 	}, [inpText]);
 
 	const classes = useStyles();
 	return (
 		<div className={classes.root}>
-			<Grid container>
-				<Grid xs={1}>
+			<Grid container spacing={2}>
+				<Grid item xs={1}>
 					<Avatar
 						// sx={{ bgcolor: green[500] }}
 						variant='rounded'
@@ -29,10 +29,16 @@ export const MessageFooter = ({ name }) => {
 						{name}
 					</Avatar>
 				</Grid>
-				<Grid xs={10}>
-					<MessageField setInpText={setInpText} />
+				<Grid item xs={9}>
+					<MessageField
+						inpText={inpText}
+						setInpText={setInpText}
+						name={name}
+					/>
 				</Grid>
-				<Grid xs={1}>{inpText}</Grid>
+				<Grid item xs={1}>
+					{inpText}
+				</Grid>
 			</Grid>
 		</div>
 	);
